@@ -30,8 +30,8 @@ class Chat {
                 MulticastSocket socket = new MulticastSocket(40000);
                 socket.joinGroup(ip);
                 while (true) {
-                    byte[] mensaje = recibe_mensaje_multicast(socket, 1000);
-                    System.out.println(new String(mensaje, "UTF-8"));
+                    byte[] mensaje = recibe_mensaje_multicast(socket, 100);
+                    System.out.println(new String(mensaje, "IBM850"));
 
                     // socket.leaveGroup(ip);
                     // socket.close();
