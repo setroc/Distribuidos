@@ -27,6 +27,7 @@ public class Main {
                 synchronized (lock) {
                     if ( tiempo_recibido >= reloj_logico ) reloj_logico = tiempo_recibido + 1;
                 }
+                int nodo = entrada.readInt();   
 
 
             } catch (Exception e) {
